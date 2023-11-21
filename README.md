@@ -34,7 +34,7 @@ The Erbar Bank web page is crafted using HTML and CSS. It features a user-friend
 
 ## Usage
 
-1. Open the `midterm.html` file in a modern web browser.
+1. Open the `index.html` file in a modern web browser.
 2. Explore different sections of the Erbar Bank web page using the navigation menu.
 3. Test the responsive design by resizing your browser window.
 4. Feel free to check the currency exchange rates and view your previous transactions.
