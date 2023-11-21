@@ -1,0 +1,618 @@
+
+nav {
+	height: 15px;
+	background: rgba(226, 5, 237, 0.5);
+	margin-bottom: 5px;
+	border: 2px solid #890590;
+}
+
+header {
+	height: 100px;
+	background: rgba(255, 102, 255,0.2);
+	border: 2px solid #9C1091;			  
+}
+#flex-container-m { /* This is the main flex for header part */
+	display: flex;
+	height: 100%;
+	align-items: center;
+	box-sizing: border-box;  
+}
+/* Starting first flexbox in main flex */
+#flex-container { /* This is the first flexbox for flex-container-m */
+	display: flex;
+	height: 100%;
+	width: 35%;
+	align-items: center;
+	justify-content: flex-start;
+	box-sizing: border-box;   
+}
+.flex-item  { /* This is the style declaration for cheap currency writing */
+    margin-left: 25px;
+    text-decoration: underline;
+    color: #E205ED;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.flex-item div:first-child {
+    margin-left: 8px;
+}
+
+#money-total, #parliament {
+    width: 70px; 
+    height: 50px;
+    margin-left: 20px;
+}
+/* Ending first flexbox in main flex */
+
+/* Starting middle flexbox in main flex */
+
+#flex-container-welcm { /* This is the second flexbox for flex-container-m */
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	height: 100%;
+	width: 30%;
+	align-items: center;
+	box-sizing: border-box; 
+}
+
+.flex-item-welcm { /* This is the style declaration for welcome writing */
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
+	box-sizing: border-box;
+	color: #E205ED;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 21px;
+}
+
+.flex-item-saying div:nth-child(2) {
+	margin-left: 15px;
+
+}
+
+.lily {
+    width: 70px; 
+    height: 50px;
+}
+/* Ending end flexbox in main flex */
+
+/* Starting end flexbox in main flex */
+
+#flex-container-saying { /* This is the third flexbox for flex-container-m */
+	display: flex;
+    height: 100%;
+    width: 35%;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;   
+}
+
+.flex-item-saying { /* This is the style declaration for writing */
+	display: flex;
+	position: relative;	
+	max-height: 100%;
+	max-width: 100%;
+	flex-direction: column;
+	align-items: center;
+    color: #E205ED;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+#money, #lock {
+    width: 70px; 
+    height: 50px;
+}
+/* Ending end flexbox in main flex */
+
+
+section { /* Section is divided into three part */
+	display: flex;
+	height: 750px;
+	width: 100%;
+	color:blueviolet;
+	background: rgba(255, 153, 204,0.38);
+}
+
+/* Starting first section which is on the left of the section divided into two separate flexboxs*/
+section-left{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 2px solid blueviolet;
+
+}
+
+#flex-container-left { /* First flexbox in the section-left part*/
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+    flex-direction: column;
+    height: 45%;
+    width: 100%; 
+    align-items: center;
+    text-align: center; 
+}
+
+.flex-item-box-left { /* Inside flex-conteiner-left which holds currency info*/	
+	display: flex;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 250px;
+    text-align: right;
+    box-sizing: border-box;
+}
+#flex-container-left .flex-item-box-left p:nth-child(1) {
+    margin-top: 10px;
+    font-family: 'Times New Roman', cursive;
+    color: #AA00FF; 
+}
+#flex-container-left .flex-item-box-left p:nth-child(2){
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', cursive;
+    color: #AA00FF; 
+}
+
+.additional-images-container { /* Arrangements for arrows*/
+	display: flex;
+	align-items: center;    
+    flex-direction: column;
+	margin-top: 6px;   
+}
+.arrowup, .arrowdown {
+    width: 30px; 
+    height: 30px;
+    margin-left: 3px;
+
+}
+#eurosign, #dolarsign, #bitcoin  {
+    width: 50px; 
+    height: 50px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+#flex-container-left-pre { /* Second flexbox in the section-left part*/
+	display: flex;
+    flex-direction: column;
+	position: relative;	
+    height: 59%;
+    width: 100%; 
+    align-items: center;
+    text-align: center;    
+}
+#flex-container-left-pre > div:first-child { /* Styling for previous transaction writing*/ 
+	font-family: 'Brush Script MT';	 
+}
+
+
+.flex-item-box-left-pre { /* Main flexbox which holds the transactions info*/
+	display: flex;
+	position: relative;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+    border: 2px solid blueviolet;
+    border-radius: 14px;  
+    margin-bottom: 15px;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.flex-item-box-left-pre-trc { /* Secondary flexbox which holds the transactions info individually*/
+	display: flex;
+	position: relative;	
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    width: 80%;
+    max-height: 20%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.flex-item-box-left-pre-trc div:first-child { /* To arrange the transaction writings*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Comic Sans MS',cursive;
+    color: #C900EA;
+}
+.additional-images-container-trc {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-right: 15px;    
+}
+
+#money-arrive{
+    width: 45px; 
+    height: 45px;
+    margin-right: 9px;
+}
+#money-sent{
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+
+}
+#money-deposite, #money-transc{
+    width: 45px; 
+    height: 45px;
+    margin-right: 8px;
+}
+
+/* Ending first section which is on the left of the section divided into two separate flexboxs*/
+
+/* Starting second section which is on the center of the section divided into two separate flexboxs*/
+
+section-center { 
+	display: flex;
+	flex-direction: column;
+	border: 2px solid blueviolet;	
+	height: 100%;
+	width: 50%;
+	box-sizing: border-box;
+}
+#flex-container-center { /* First flexbox in the section-center part which holds the money picture*/
+	background-image: url('./images/bigmoney.png'); 
+	display: flex;
+	position: relative;	
+    height: 28%;
+    width: 100%;
+}
+
+#flex-container-center-pre { /* Second flexbox in the section-center part which holds the bank info*/
+
+	display: flex;
+	justify-content: space-between;
+    flex-direction: column;
+	position: relative;	
+    height: 72%;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+}
+#flex-container-center-pre h1{
+	font-family: Georgia, cursive;
+
+}
+#flex-container-center-pre p{
+	font-family: Avanta Garde, cursive;
+    color: #C900EA;
+
+}
+
+
+.mission > p{
+	margin-left: 10px;
+}
+/* Ending second section which is on the center of the section divided into two separate flexboxs*/
+
+/* Starting third section which is on the left of the section divided into two separate flexboxs*/
+
+section-right{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 25%;
+	box-sizing: border-box;
+	border: 2px solid blueviolet;
+}
+
+#flex-container-right { /* First flexbox in the section-right part*/
+	display: flex;
+    flex-direction: column;
+	position: relative;	
+    height: 60%;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    margin-top: 5px; 
+
+}
+
+.flex-item-box-right { /* Flexbox which holds the whole profile info */
+	display: flex;
+	flex-direction: column;
+	position: relative;	
+	align-items: center;
+	justify-content: space-around;
+    border: 2px solid blueviolet;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.flex-item-box-right p { /* Styling for profile writing */
+	font-family: 'Brush Script MT', cursive;
+    
+}
+.flex-item-box-right-inf { /* Flexbox which holds the profile info individually */
+	display: flex;
+	text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+    width: 90%;
+    max-height: 13%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.flex-item-box-right-inf strong { /* Styling for profile writings */
+    font-family: Georgia, cursive;
+    color: #AA00FF; 
+}
+.flex-item-box-right-inf  p { /* Styling for profile writings */
+    font-family: Avanta Garde, cursive;
+    color: #C900EA;
+}
+#flex-container-right-pre { /* Second flexbox in the section-right part */
+	display: flex;
+    flex-direction: column;
+	position: relative;
+    height: 40%;
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+}
+#flex-container-right-pre > p { /* Styling for current balance writing */
+    font-family: 'Brush Script MT', cursive;
+}
+
+
+.flex-item-box-right-pre-wal { /* Flexbox which holds the whole wallet info*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 5px; 
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.flex-item-box-right-pre-mny { /* Flexbox which holds the money info*/
+
+	display: flex;
+	text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+    width: 95%;
+    max-height: 20%;
+    align-items: center;
+    box-sizing: border-box;
+}
+.flex-item-box-right-pre-mny div:first-child  { /* Arrangements for money amount */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Times New Roman', cursive;
+    color: #AA00FF;
+
+}
+.flex-item-box-right-pre-grp { /* Flexbox which holds whole info about the electronic wallet and analysis*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    border: 2px solid blueviolet;
+    border-radius: 10px; 
+    width: 95%;
+    height: 50%;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+.flex-item-box-right-pre-trc { /* Flexbox which holds info about the electronic wallet and analysis individually*/
+	display: flex;
+	align-items: center;
+	text-align: center;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;  
+    width: 100%;
+    height: 60%;    
+    box-sizing: border-box;
+}
+.flex-item-box-right-pre-trc div:first-child { /* Arrangements for electronic wallet and analysis writings */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Georgia, cursive;
+    color: #AA00FF;
+}
+
+#item-icon{
+    width: 45px; 
+    height: 45px;
+    margin-right: 5px;
+}
+#money-budget{
+    width: 45px; 
+    height: 45px;
+    margin-right: 9px;
+}
+.profile-container {
+	display: flex;
+	margin-top: 10px;
+	align-items: right;    
+}
+.graph-container {
+	display: flex;
+	margin-right: 10px;
+	align-items: center;    
+}
+.wallet-container {
+	display: flex;
+	margin-right: 10px;
+	align-items: right;   
+}
+#profile, #graph, #wallet {
+    width: 50px; 
+    height: 50px;
+}
+
+/* Ending third section which is on the left of the section divided into two separate flexboxs*/
+
+footer {
+	display: flex;
+    flex-direction: column;
+	height: 150px;
+	background: rgba(255, 102, 255,0.3);	
+    border: 2px solid blueviolet;
+}
+
+#flex-container-links { /* Flexbox which holds the whole links*/
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+   	width: 100%;
+   	margin-top: 20px;
+}
+.flex-item-box { /* Holds the links individually */
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.copyright { /* Arrangements for copyright writing */
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+    border: 1px solid blueviolet;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    color: blueviolet;
+    font-family: 'Brush Script MT', cursive;
+    background: rgba(255, 102, 255,0.4);
+}
+.disabled a{
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    section {
+		width: auto;
+        height: auto;
+        font-size: 2vw;
+    }
+    section-left {
+    	width: auto;
+    	height: auto;
+    }
+    section-center {
+    	height: auto;
+        max-width: 100%;
+        font-size: 1.5vw; 
+    }
+    section-right {
+    	height: auto;
+    	width: auto;
+    	font-size: 1.5vw;
+    }
+    #arrowup, #arrowdown {
+	    width: 20px; 
+	    height:20px;
+	}
+	#eurosign, #dolarsign, #bitcoin, #money-arrive, #money-sent, #money-deposite, #money-transc {
+	    width: 30px; 
+	    height: 30px;
+	}
+	#money-budget, #item-icon {
+	    max-width: 100%; 
+    	height: auto;
+    	margin-left: 5px;
+	}
+	#graph, #wallet {
+	    max-width: 100%;
+    	height: auto;
+    	margin-left: 5px;
+	}
+	.graph-container {
+		margin-right: 5px;
+	}
+	.wallet-container {
+		margin-right: 5px; 
+	}
+	.flex-item-box-right-pre-grp{
+		font-size: 1.5vw; 
+	}
+	.flex-item-box-right-pre-mny{
+		font-size: 1.5vw; 
+	}
+	.flex-item-box-right-inf {
+        max-width: 100%;
+        height: auto;
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+    .additional-images-container-trc {
+		margin-right: 0;   
+	}    
+}
+@media only screen and (max-width: 767px) {
+    #flex-container-m {
+       width: auto;
+       max-height: 100%;
+       font-size: 2vw;
+    }
+    .flex-item-welcm > div {
+       font-size: 2vw;
+    }
+    #lily, #lily2 {
+	    width: 30px;
+    	height: auto;
+    	
+	}
+	#flex-container-m .flex-item  { 
+	    margin-left: 15px;
+	    
+	}
+	#flex-container-m #money-total{
+		width: 30px; 
+	    height:30px;
+	}
+	#flex-container-m #parliament{
+		width: 30px; 
+	    height:30px;
+	}
+	#flex-container-saying #money{
+	    width: 30px; 
+	    height: 30px;
+	}
+	#flex-container-saying #lock {
+	    width: 30px; 
+	    height: 30px;
+	}
+    
+}
