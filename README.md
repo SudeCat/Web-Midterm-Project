@@ -23,7 +23,8 @@ The Erbar Bank web page is crafted using HTML and CSS. It features a user-friend
 - **Financial Overview**: Provides information on the user's current balance, electronic wallet, and personal financial analysis.
 
 ## Preview
-![erbar_bank](https://github.com/SudeCat/Web-Midterm-Project/assets/81020923/e376a5ac-b40f-4e31-b81b-69590b8bbf97)
+![erbar_bank](https://github.com/SudeCat/Web-Midterm-Project/assets/81020923/8eda17aa-f182-4d15-9f67-c1715bf6fbd1)
+
 
 
 ## Installation
